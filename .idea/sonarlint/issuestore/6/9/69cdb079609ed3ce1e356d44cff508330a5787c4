@@ -1,0 +1,122 @@
+
+^
+java:S1192z"HDefine a constant instead of duplicating this literal "samsung" 3 times.(ˆ·ÔÎ
+0
+java:S1220""Move this file to a named package.
+_
+java:S2583Š"CChange this condition so that it does not always evaluate to "true"(Û‘ø›øÿÿÿÿ
+[
+java:S2583¹"DChange this condition so that it does not always evaluate to "false"(­ú”¦
+T
+java:S2589¿"8Remove this expression which always evaluates to "false"(Œ«‹«ùÿÿÿÿ
+—
+java:S1186["€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(´íİ™
+˜
+java:S1186Ê"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çß±ó
+
+java:S1186à"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ˆÿ‘‚ûÿÿÿÿ
+
+java:S1186â"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÈûÖîûÿÿÿÿ
+˜
+java:S1186ä"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¢›ë›
+—
+java:S1186æ"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ªÚó
+
+java:S1186ş"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‚¬æîüÿÿÿÿ
+˜
+java:S1186€"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÆàÃ
+˜
+java:S1186‚"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(á¼ù
+˜
+java:S1186„"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À¯ ¥
+—
+java:S1186†"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(›ÏÜ+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¿©ûó
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÛìÆ÷ùÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(Á©ÀĞ
+Q	java:S125"<This block of commented-out lines of code should be removed.(«çëÁ
+V	java:S125"<This block of commented-out lines of code should be removed.(ßÚ–çüÿÿÿÿ
+V	java:S125$"<This block of commented-out lines of code should be removed.(ƒùºÛúÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(›ñûµùÿÿÿÿ
+`
+java:S18548"JRemove this useless assignment to local variable "declaredAndInitialized".(‡²Á
+c
+java:S18545"MRemove this useless assignment to local variable "declaredButNotInitialized".(Ì¼“·
+S	java:S106="9Replace this use of System.out or System.err by a logger.(Ğ‹Íƒşÿÿÿÿ
+S
+java:S1854I"=Remove this useless assignment to local variable "isCorrect".(å¹ÊÚ
+e
+java:S1854X"JRemove this useless assignment to local variable "anotherPriceMultiplier".(·©¤Êúÿÿÿÿ
+Y
+java:S1854R"CRemove this useless assignment to local variable "priceMultiplier".(Éˆ ¹
+U
+java:S1854q"?Remove this useless assignment to local variable "floatNumber".(›œ
+S
+java:S1854l">Remove this useless assignment to local variable "longNumber".(ïª
+V
+java:S1854”":Remove this useless assignment to local variable "result".(ï¤üùÿÿÿÿ
+V
+java:S1854˜":Remove this useless assignment to local variable "result".(áøÿìùÿÿÿÿ
+Q
+java:S1854œ":Remove this useless assignment to local variable "result".(·Í¥¡
+w
+java:S3923€"[Remove this conditional structure or edit its code blocks so that they're not all the same.(•ºñ¦şÿÿÿÿ
+w
+java:S3923†"[Remove this conditional structure or edit its code blocks so that they're not all the same.(•ºñ¦şÿÿÿÿ
+g	java:S128¦"LEnd this switch case with an unconditional break, return or throw statement.(Ú’‰ïüÿÿÿÿ
+a	java:S128£"LEnd this switch case with an unconditional break, return or throw statement.(ãç·/
+O	java:S106­"9Replace this use of System.out or System.err by a logger.(½ÊÊ…
+T	java:S106´"9Replace this use of System.out or System.err by a logger.(Ğö¶üÿÿÿÿ
+T	java:S106º"9Replace this use of System.out or System.err by a logger.(Î€¹ùÿÿÿÿ
+T	java:S106¾"9Replace this use of System.out or System.err by a logger.(ˆ–ıÿÿÿÿ
+W
+java:S1854Å";Remove this useless assignment to local variable "samsung".(¶†™„ıÿÿÿÿ
+W	java:S125Ï"<This block of commented-out lines of code should be removed.(¬§™…øÿÿÿÿ
+R	java:S125Ô"<This block of commented-out lines of code should be removed.(¥ú«Ã
+R	java:S125é"<This block of commented-out lines of code should be removed.(­Å¹
+R	java:S125ô"<This block of commented-out lines of code should be removed.(¯ØÿÈ
+N	java:S106ù"9Replace this use of System.out or System.err by a logger.(Õƒã*
+T
+java:S14812">Remove this unused "declaredButNotInitialized" local variable.(é«ş®
+Q
+java:S14818";Remove this unused "declaredAndInitialized" local variable.(‡²Á
+^
+java:S1481;"CRemove this unused "declaredAndInitializedWithNull" local variable.(ÄÃà…ÿÿÿÿÿ
+H
+java:S1481B"-Remove this unused "userName" local variable.(•Á–ëÿÿÿÿÿ
+O
+java:S1481C"9Remove this unused "externalCategoryList" local variable.(«›–
+W
+java:S1481D"<Remove this unused "skuThatShouldBeExcluded" local variable.(£›¥¢ûÿÿÿÿ
+<
+java:S1481G"&Remove this unused "a" local variable.(ã‹Í
+<
+java:S1481H"'Remove this unused "b1" local variable.(‹ÑêW
+D
+java:S1481I".Remove this unused "isCorrect" local variable.(å¹ÊÚ
+J
+java:S1481R"4Remove this unused "priceMultiplier" local variable.(Éˆ ¹
+V
+java:S1481X";Remove this unused "anotherPriceMultiplier" local variable.(·©¤Êúÿÿÿÿ
+?
+java:S1481`")Remove this unused "name" local variable.(Ê§…ñ
+E
+java:S1481a"0Remove this unused "charElement" local variable.(®Üü4
+J
+java:S1481c"/Remove this unused "byteNumber" local variable.(¥›¸üÿÿÿÿ
+F
+java:S1481d"0Remove this unused "shortNumber" local variable.(­Çàæ
+A
+java:S1481e"+Remove this unused "number" local variable.(æ‚áœ
+J
+java:S1481f"/Remove this unused "longNumber" local variable.(õèøŞùÿÿÿÿ
+E
+java:S1481n"0Remove this unused "floatNumber" local variable.(ÙºØl
+G
+java:S1481o"1Remove this unused "doubleNumber" local variable.(Øä¶
+G
+java:S1481s",Remove this unused "correct" local variable.(®¢¸Éøÿÿÿÿ
+B
+java:S1481"+Remove this unused "result" local variable.(ıï‚
+H
+java:S1481Å",Remove this unused "samsung" local variable.(¶†™„ıÿÿÿÿ
