@@ -1,10 +1,10 @@
 public class HomeworkD1 {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
         String text = "gjkdqowucnasjhgqpoiq3ewrpovtnjsdasdgkasjjoiwqjriqwjktkxl#$@!$0ioewakjsbfjkasdnfjwla;erm80oootadasdiasdasd123123asdasdasd123r";
         String fstSum = "";
         String sndSum = "";
-        for (int i=0; i<text.length(); i++) {
+        for (int i = 0; i < text.length(); i++) {
             String curChar = String.valueOf(text.charAt(i));
             switch (i) {
                 case 14:
@@ -22,8 +22,8 @@ public class HomeworkD1 {
                     System.out.print(curChar);
                     break;
             }
-            if(i==100) break;
+            if (i == 100) break;
         }
-        System.out.println("\nFinal result: "+fstSum+" "+sndSum);
+        System.out.println("\nFinal result: " + fstSum + " " + sndSum);
     }
 }

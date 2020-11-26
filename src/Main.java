@@ -10,14 +10,24 @@ import java.util.regex.Pattern;
  *******************************/
 public class Main {
 
-	static int smt;
-
 	public static void main(String[] args) {
 		System.out.println("The app start here ...");
 		System.out.println("----------||----------");
 
 
-		Person muleder = new Person();
+		Person adrian = new Person("Adrian", 22, "Mściwoja", 61);
+		Person test = new Person("test");
+
+		String textOne = "O";
+		String textTwo = new String("o");
+		String textTwoTwo = new String("Two");
+		textOne = "Three";
+
+		StringBuilder sb = new StringBuilder("Start")
+				.append("testowe");
+
+		System.out.println(textTwo.compareTo(textOne));
+		System.out.println(sb);
 
 		//declarationAndInitialization();
 		//goodAndBadVariableNames();
@@ -62,7 +72,7 @@ public class Main {
 		// deklaracja + inicjalizacja null'em
 		String declaredAndInitializedWithNull = null;
 
-		System.out.println("Value of a variable = " + smt);
+		System.out.println("Value of a variable = ");
 	}
 
 	public static void goodAndBadVariableNames() {
