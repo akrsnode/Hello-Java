@@ -11,7 +11,6 @@ public class StringLinkedList <T>{
     public void add(Node node) {
         node.setNext(first);
         first = node;
-        node.setId(size);
         size++;
     }
 
@@ -40,8 +39,6 @@ public class StringLinkedList <T>{
                 result = result.getNext();
             }
         }
-
-
 
         return result;
     }
