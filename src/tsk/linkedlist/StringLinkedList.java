@@ -1,16 +1,16 @@
 package tsk.linkedlist;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class StringLinkedList <T>{
 
     private Node first = null;
-    private long size = 0;
+    private int size = 0;
 
     public void add(Node node) {
-        node.setNext(first);
-        first = node;
+        if (first==null) {
+            first = node;
+        } else {
+            this.get(size).setNext(node);
+        }
         size++;
     }
 
@@ -22,7 +22,7 @@ public class StringLinkedList <T>{
         return node!=null;
     }
 
-    public long size() {
+    public int size() {
         return size;
     }
 
@@ -37,6 +37,7 @@ public class StringLinkedList <T>{
             int counter = 1;
             while (counter<id){
                 result = result.getNext();
+                counter++;
             }
         }
 
@@ -49,8 +50,8 @@ public class StringLinkedList <T>{
 
     private void printList(Node<String> node) {
         if(hasNext(node)) {
-            printList((node.getNext()));
             System.out.println("Node is " + node.getValue());
+            printList((node.getNext()));
         }
     }
 
