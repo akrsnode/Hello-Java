@@ -1,16 +1,16 @@
 package tsk.linkedlist;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class StringLinkedList <T>{
+public class StringLinkedList<T> {
 
     private Node first = null;
-    private long size = 0;
+    private int size = 0;
 
     public void add(Node node) {
-        node.setNext(first);
-        first = node;
+        if (first == null) {
+            first = node;
+        } else {
+            this.get(size - 1).setNext(node);
+        }
         size++;
     }
 
@@ -19,10 +19,10 @@ public class StringLinkedList <T>{
     }
 
     public boolean hasNext(Node node) {
-        return node!=null;
+        return node != null;
     }
 
-    public long size() {
+    public int size() {
         return size;
     }
 
@@ -33,10 +33,11 @@ public class StringLinkedList <T>{
 
         Node result = first;
 
-        if (id!=0) {
-            int counter = 1;
-            while (counter<id){
+        if (id != 0) {
+            int counter = 0;
+            while (counter < id) {
                 result = result.getNext();
+                counter++;
             }
         }
 
@@ -48,9 +49,9 @@ public class StringLinkedList <T>{
     }
 
     private void printList(Node<String> node) {
-        if(hasNext(node)) {
-            printList((node.getNext()));
+        if (hasNext(node)) {
             System.out.println("Node is " + node.getValue());
+            printList((node.getNext()));
         }
     }
 
@@ -59,15 +60,13 @@ public class StringLinkedList <T>{
         StringLinkedList<String> list = new StringLinkedList();
         list.add(new Node("abc"));
         list.add(new Node("def"));
-        list.add(new Node("get"));
+        list.add(new Node("ghi"));
+        list.add(new Node("jkl"));
 
         list.print();
 
         System.out.println(list.size());
-        System.out.println(list.get(1).getValue());
+        System.out.println(list.get(3).getValue());
 
-        //TO-DO
-        //przerobić na generics
-        //odwrócić kolejność dodawania
     }
 }

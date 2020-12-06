@@ -1,11 +1,11 @@
 package tsk.linkedlist;
 
-public class Node <String>{
+public class Node <T>{
 
     private Node next;
-    private String value;
+    private T value;
 
-    public Node(String value) {
+    public Node(T value) {
         this.value = value;
     }
 
@@ -17,11 +17,11 @@ public class Node <String>{
         this.next = next;
     }
 
-    public String getValue() {
+    public T getValue() {
         return value;
     }
 
-    public void setValue(String value) {
+    public void setValue(T value) {
         this.value = value;
     }
 }
