@@ -9,7 +9,13 @@ public class Tourney {
     public void runTourney(List<ConstructedPerson> list) {
         for (int i = 0; i < list.size(); i+=2) {
             DeathMatch match = new DeathMatch();
-            match.fight(list.get(i), list.get(i+1));
+
+            try {
+                match.fight(list.get(i), list.get(i+1));
+            } catch (IndexOutOfBoundsException ex) {
+                match.setWinner(list.get(i));
+            }
+
             winners.add(match.getWinner());
         }
     }
