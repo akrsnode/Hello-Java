@@ -8,7 +8,7 @@ public class IsPalindrome {
         }
         if (text.length() > 1) {
             StringBuilder reversedText = new StringBuilder(text).reverse();
-            if (reversedText.toString().equals(text)) {
+            if (reversedText.toString().toLowerCase().equals(text.toLowerCase())) {
                 return true;
             }
             return false;
