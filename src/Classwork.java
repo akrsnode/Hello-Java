@@ -1,4 +1,5 @@
 import tst.classes.ex.Payment;
+import tst.classes.ex.Subsciption;
 import tst.classes.ex.User;
 
 public class Classwork {
@@ -9,5 +10,7 @@ public class Classwork {
         newUser.addPayment(newPay);
         newUser.getPayment();
         newPay.getRaport();
+        Subsciption newSub = Subsciption.DAY;
+        System.out.println(newSub);
     }
 }

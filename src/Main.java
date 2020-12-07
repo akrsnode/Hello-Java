@@ -1,8 +1,13 @@
+//import tsk.civil.*;
 import tst.classes.ex.Person;
 import tst.classes.ex.Smartphone;
 
+import java.lang.reflect.Array;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+//import static tsk.civil.NumberGenerator.generateHealth;
 
 /********************************
  * Created by Alex S.
@@ -14,20 +19,71 @@ public class Main {
 		System.out.println("The app start here ...");
 		System.out.println("----------||----------");
 
+		String[] tab = new String[3];
+		System.out.println(tab.length);
 
-		Person adrian = new Person("Adrian", 22, "Mściwoja", 61);
-		Person test = new Person("test");
+		tab[0] = "mom";
+		tab[0] = "dad";
+		tab[0] = "house";
 
-		String textOne = "O";
-		String textTwo = new String("o");
-		String textTwoTwo = new String("Two");
-		textOne = "Three";
+//		for (int i = 0; i < tab.length; i++) {
+//			System.out.println(tab[i]);
+//		}
+//
+//		String[] tab2 = new String[4];
+//
+//		for (int i = 0; i < ; i++) {
+//
+//		}
 
-		StringBuilder sb = new StringBuilder("Start")
-				.append("testowe");
+		
+		
 
-		System.out.println(textTwo.compareTo(textOne));
-		System.out.println(sb);
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MAX_VALUE +1);
+		System.out.println(Integer.MIN_VALUE);
+		System.out.println(Integer.MAX_VALUE + 3);
+
+//
+//		Human humOne = new Human("Adi");
+//		NumberGenerator numGen = new NumberGenerator();
+//		System.out.println(numGen.generateHealth());
+//
+//		Warrior firstWarrior = new Warrior("Boguś", 285);
+//		Warrior secondWarrior = new Warrior("Janusz", 300);
+//
+//
+//		firstWarrior.getTheName();
+//
+//		System.out.println(PopulationObserver.getPopulation());
+//
+//		DeathMatch matchDemo = new DeathMatch();
+//		matchDemo.fight(firstWarrior, secondWarrior);
+//
+//
+//
+//		Person adrian = new Person("Adrian", 22, "Mściwoja", 61);
+//		Person test = new Person("test");
+//
+//		String textOne = "O";
+//		String textTwo = new String("o");
+//		String textTwoTwo = new String("Two");
+//		textOne = "Three";
+//
+//		StringBuilder sb = new StringBuilder("Start")
+//				.append("testowe");
+//
+//		List<String> doe = new ArrayList<>();
+//		List<String> john = new ArrayList<>();
+//		doe.add("First value");
+//		john.add("Second values");
+//
+//		Map<Integer, List<String>> stringMap = new HashMap<>();
+//		stringMap.put(1, john);
+//		stringMap.put(2, doe);
+//
+//		System.out.println(stringMap.values());
+
 
 		//declarationAndInitialization();
 		//goodAndBadVariableNames();
