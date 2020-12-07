@@ -2,7 +2,7 @@ package tst.classes.ex;
 
 import java.util.TreeSet;
 
-public class NewMain {
+public class FindSecondGreatest {
 
     private static int findSecondGreatest(int[] array) {
         if (array == null) {
