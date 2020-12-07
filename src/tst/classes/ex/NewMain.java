@@ -1,7 +1,6 @@
 package tst.classes.ex;
 
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.TreeSet;
 
 public class NewMain {
 
@@ -9,14 +8,14 @@ public class NewMain {
         if (array == null) {
             throw new IllegalArgumentException("Array is null");
         }
-        HashSet<Integer> setFromArray = new HashSet<>();
+        TreeSet<Integer> setFromArray = new TreeSet<>();
         for (int elem : array) {
             setFromArray.add(elem);
         }
         if (setFromArray.size() < 2) {
-            throw new IllegalArgumentException("Array contain not enough elements: " + setFromArray.size());
+            throw new IllegalArgumentException("Array contain not enough unique elements: " + setFromArray.size());
         }
-        return array[array.length - 2];
+        return setFromArray.lower(setFromArray.last());
     }
 
     public static void main(String[] args) {
@@ -25,7 +24,7 @@ public class NewMain {
         array = new int[]{1};
 //        System.out.println(findSecondGreatest(array));
         array = new int[]{1, 1};
-        System.out.println(findSecondGreatest(array));
+//        System.out.println(findSecondGreatest(array));
         array = new int[]{1, 2};
         System.out.println(findSecondGreatest(array));
         array = new int[]{1, 2, 3, 4, 5};
@@ -38,6 +37,7 @@ public class NewMain {
         System.out.println(findSecondGreatest(array));
         int[] array2 = new int[]{10, 10, 7, 8};
         System.out.println(findSecondGreatest(array2));
-
+        array = new int[]{10, 10, 10, 10, 10};
+        System.out.println(findSecondGreatest(array));
     }
 }
