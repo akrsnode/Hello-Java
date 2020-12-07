@@ -1,6 +1,7 @@
 package tst.classes.ex;
 
 import java.util.Arrays;
+import java.util.HashSet;
 
 public class NewMain {
 
@@ -8,11 +9,14 @@ public class NewMain {
         if (array == null) {
             throw new IllegalArgumentException("Array is null");
         }
-        if (array.length < 2) {
-            throw new IllegalArgumentException("Array contain not enough elements: " + array.length);
+        HashSet<Integer> setFromArray = new HashSet<>();
+        for (int elem : array) {
+            setFromArray.add(elem);
         }
-        Arrays.sort(array);
-        return array[array.length-2];
+        if (setFromArray.size() < 2) {
+            throw new IllegalArgumentException("Array contain not enough elements: " + setFromArray.size());
+        }
+        return array[array.length - 2];
     }
 
     public static void main(String[] args) {
@@ -20,6 +24,8 @@ public class NewMain {
 //        System.out.println(findSecondGreatest(array));
         array = new int[]{1};
 //        System.out.println(findSecondGreatest(array));
+        array = new int[]{1, 1};
+        System.out.println(findSecondGreatest(array));
         array = new int[]{1, 2};
         System.out.println(findSecondGreatest(array));
         array = new int[]{1, 2, 3, 4, 5};
@@ -30,5 +36,8 @@ public class NewMain {
         System.out.println(findSecondGreatest(array));
         array = new int[]{-5, -61, -31, 0};
         System.out.println(findSecondGreatest(array));
+        int[] array2 = new int[]{10, 10, 7, 8};
+        System.out.println(findSecondGreatest(array2));
+
     }
 }
