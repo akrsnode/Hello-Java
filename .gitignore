@@ -3,3 +3,6 @@
 *.iml
 #Java Compiler
 out/
+#System files
+.DS_Store
+src/.DS_Store
