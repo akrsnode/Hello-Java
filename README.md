@@ -1,2 +1,1 @@
-# hello-java
-Hello-java
+# Hello-Java
