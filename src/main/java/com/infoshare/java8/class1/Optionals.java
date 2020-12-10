@@ -6,9 +6,10 @@ public class Optionals {
 
     public static void main(String[] args) {
 
-        String str = "isa";
-        Optional<String> optionalS = Optional.of(str);
+        String str = null;
+        str = "r";
 
+        Optional<String> optionalS = Optional.ofNullable(str);
         System.out.println(optionalS.isEmpty());
     }
 }

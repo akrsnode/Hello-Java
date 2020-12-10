@@ -1,6 +1,7 @@
 package com.infoshare.java8.class1;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.Month;
 import java.time.format.DateTimeFormatter;
 
@@ -27,5 +28,20 @@ public class Dates {
         System.out.println(insertedDate);
 
         System.out.println(dateWithCustomFormat);
+
+        System.out.println("----------------------------------");
+
+        //Time tasks
+        LocalTime customTime = LocalTime.of(7, 15, 0);
+
+        DateTimeFormatter customTimeFormat = DateTimeFormatter.ofPattern("hh:mm:ss");
+//        LocalTime timeFromString = LocalTime.parse("08:00:00", customTimeFormat);
+
+        System.out.println(customTime.getHour());
+        System.out.println(customTime.getMinute());
+        System.out.println(customTime.getSecond());
+
+        System.out.println(customTime.toString());
+
     }
 }
